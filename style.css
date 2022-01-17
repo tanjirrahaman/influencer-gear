@@ -329,3 +329,125 @@ h5 {
     .contact {
         padding: 0px 25px;
     }
+    /*---------------Responsive Styles For Ipad--------------*/
+@media screen and (min-width : 688px) and (max-width : 992px) {
+    .container {
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+
+    /* nav-bar media queries */
+    .nav-right {
+        right: 0;
+    }
+
+    .nav-main .nav-left img {
+        width: 100px;
+        height: 50px;
+        margin-left: 20px;
+    }
+
+    .nav-right ul {
+        position: static;
+        display: none;
+    }
+
+    .nav-right li {
+        margin-bottom: 1px;
+    }
+
+    .nav-right ul li,
+    li a {
+        width: 100%;
+    }
+
+    .nav-right li a {
+        padding: 5px 0px;
+        color: white;
+    }
+
+    .show-menu {
+        display: block;
+        margin-top: 5px;
+        background: none;
+    }
+
+    .menu-bar {
+        margin-left: 150px;
+    }
+
+    input[type=checkbox]:checked~#menu {
+        display: block;
+        margin-right: 45px;
+        background: var(--main-color);
+    }
+
+
+    /* hero-section media queries */
+    .hero-main {
+        flex-direction: column;
+        padding: 0px 50px;
+    }
+
+    .hero-left {
+        padding-right: 0px;
+        order: 2;
+    }
+
+    .hero-left h1 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .hero-left p {
+        font-size: 15px;
+    }
+
+    .hero-right {
+        order: 1;
+    }
+
+    .hero-right img {
+        width: 100%;
+    }
+
+    /* brands-section media queries */
+    .brands-main {
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 50px;
+        border: none;
+    }
+
+    /* popular-collection-section media queries */
+    .collection-main {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+        padding: 5px 15px;
+    }
+
+    .see-more-btn a {
+        float: none;
+        margin-left: 30px;
+    }
+
+    /* contact-section media queries */
+    .contact {
+        flex-direction: column;
+        padding-top: 0;
+    }
+
+    .contact-right img {
+        width: 80%;
+        float: none;
+        margin: 35px 35px;
+    }
+
+    input {
+        width: 100%;
+        height: 50px;
+        padding: 0px 10px;
+        margin-top: 10px;
+        border: none;
+        border-bottom: 2px solid var(--main-color);
+    }
