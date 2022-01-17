@@ -1,0 +1,331 @@
+/*----------- google-fonts start --------- */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400&family=Ubuntu:wght@500&display=swap');
+/* ------------ common ------------ */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+:root {
+    --main-color: #ff0a54;
+    --p-color: #a4a4a7;
+    --footer-color: #0a0826;
+}
+.container {
+   
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+/* ------------navbar section (1)-------------- */
+.nav-main {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    position: absolute;
+    top: 20px;
+}
+.nav-left img {
+    width: 150px;
+    height: 80px;
+    padding-left: 100px;
+}
+.nav-right {
+    position: relative;
+    right: 100px;
+}
+#icon {
+    border: none;
+}
+#icon:hover {
+    color: var(--main-color);
+}
+.nav-right ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 20px;
+}
+.nav-right li {
+    display: inline-block;
+    float: none;
+}
+.nav-right li a {
+    display: block;
+    font-size: 16px;
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: .5s;
+    border-bottom: 2px solid transparent;
+}
+.nav-right li:hover a {
+    border-bottom: 2px solid var(--main-color);
+}
+.nav-right li:hover ul a:hover {
+    color: #000;
+}
+.nav-right li ul {
+    display: none;
+}
+.show-menu {
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+    padding: 10px 0;
+    display: none;
+}
+input[type=checkbox] {
+    display: none;
+}
+input[type=checkbox]:checked~#menu {
+    display: block;
+}
+/* ----------------main section part 2-------------- */
+.main-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left-section {
+   
+    padding-left: 100px;
+}
+.left-section h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 10px;
+}
+.left-section p {
+    color: var(--p-color);
+    line-height: 20px;
+    margin-bottom: 40px;
+}
+.left-section a {
+    text-decoration: none;
+    padding: 10px 30px;
+    color: white;
+    border-radius: 50px;
+    background-color: var(--main-color);
+    transition: .4s;
+}
+.left-section a:hover {
+    box-shadow: 5px 5px 10px var(--main-color);
+}
+.right-section{
+    padding-right: 100px;
+}
+
+/* ---------------- brands section (3)-------------- */
+.container3{
+    border: 1px solid rgb(238, 20, 20);padding-top: 50px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+    padding-left: 100px
+   
+}
+.brands-main {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-column-gap: 10px;
+    }
+.brands-image {
+    text-align: center;
+}
+.brands-image img {
+    transition: .5s;
+}
+.brands-image img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+/* ---------------- brands section end-------------- */
+
+/* ---------------- popular collection section -------------- */
+.section-title h1 {
+    text-align: center;
+    font-size: 28px;
+    padding-bottom: 30px;
+}
+.collection-main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 20px 60px;
+}
+.collection {
+    padding: 10px 15px;
+    transition: .5s;
+    border-radius: 10px;
+}
+.collection:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+}
+.collection .collection-banner img {
+    width: 100%;
+}
+.collection-details p {
+    margin: 0;
+}
+.fa-star {
+    color: rgba(233, 39, 39, 0.562);
+}
+.fillup {
+    color: orange;
+}
+.review {
+    display: flex;
+    align-items: center;
+}
+.review i {
+    font-size: 12px;
+}
+.review span {
+    color: var(--main-color);
+    margin-left: 10px;
+}
+.see-more-btn a {
+    float: right;
+    margin-right: 70px;
+    color: var(--main-color);
+    text-decoration: none;
+    transition: .5s;
+}
+.see-more-btn a:hover {
+    transform: scale(1.1);
+}
+/* ----------------contact-section (5)-------------- */
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+}
+.contact h1 {
+    line-height: 35px;
+    font-size: 28px;
+}
+.contact-left a {
+    text-decoration: none;
+    padding: 10px 50px;
+    color: white;
+    border-radius: 50px;
+    background-color: var(--main-color);
+    transition: .4s;
+}
+.contact-left a:hover {
+    box-shadow: 5px 5px 10px var(--main-color);
+}
+.contact-left {
+    flex: 1;
+}
+.contact-right {
+    flex: 1;
+}
+.contact-right img {
+    width: 90%;
+    float: right;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 15px;
+}
+/* ----------------contact form -------------- */
+.contact-form {
+    margin-top: 30px;
+}
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+   
+}
+input {
+    width: 375px;
+    height: 50px;
+    padding: 0px 10px;
+    margin-top: 10px;
+    border: none;
+    border-bottom: 2px solid var(--main-color);
+}
+input:focus {
+    outline: none;
+    border-bottom: 1px solid rgb(255, 0, 140);
+}
+.right-section2{
+    padding-left: 40px;
+    padding-top: 60px;
+}
+
+/* -------- footer section (6) -------------- */
+.footer {
+    background-color: var(--footer-color);
+    text-align: center;
+    color: white;
+}
+
+.footer-details {
+    padding: 30px 0px;
+}
+
+.footer-details h2,
+p,
+h5 {
+    margin: 0;
+}
+
+.footer-details p,
+h5 {
+    color: var(--p-color);
+}
+
+.media-icon {
+    margin-top: 15px;
+}
+
+.media-icon i {
+    font-size: 25px;
+    padding: 0 10px;
+    transition: .5s;
+    color: var(--p-color);
+}
+
+.media-icon i:hover {
+    cursor: pointer;
+    color: var(--main-color);
+}
+
+/*Responsive Styles For Mobile*/
+@media screen and (min-width: 761px) and (max-width:868px) {
+    .nav-main {
+        padding: 0 15px;
+    }
+
+    .nav-right {
+        right: 0px;
+    }
+
+    .hero-main {
+        padding: 0px 20px;
+    }
+
+    .hero-left {
+        padding-right: 0px;
+    }
+
+    .brands-main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        border-image-slice: 120 10;
+        grid-row-gap: 30px;
+    }
+
+    .collection-main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact {
+        padding: 0px 25px;
+    }
